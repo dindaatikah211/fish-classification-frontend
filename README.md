@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+Readme · MD
+# 🐟 fin. — Klasifikasi Ikan Air Tawar dengan AI
+ 
+> Unggah foto ikan air tawarmu, dan biarkan AI mengenali jenisnya secara instan — lengkap dengan nama latin, habitat, dan ciri khasnya.
+ 
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?logo=fastapi)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow)
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python)
+ 
+---
+ 
+## 📖 Tentang Project
+ 
+**fin.** adalah aplikasi web klasifikasi ikan air tawar berbasis AI yang dikembangkan sebagai Tugas Besar mata kuliah **Pengolahan Citra**. Pengguna cukup mengupload foto ikan, lalu sistem akan mengenali jenisnya secara otomatis menggunakan model deep learning.
+ 
+### 🐠 Kelas Ikan yang Didukung
+ 
+| No | Kelas | Nama Latin | Ciri Khas |
+|----|-------|-----------|-----------|
+| 1 | Lele | *Clarias batrachus* | Tidak bersisik, ada kumis/sungut |
+| 2 | Gurame | *Osphronemus goramy* | Badan lebar gepeng, sisik besar |
+| 3 | Ikan Mas | *Cyprinus carpio* | Sisik besar keemasan, mulut monyong |
+| 4 | Nila | *Oreochromis niloticus* | Garis vertikal di tubuh & ekor |
+| 5 | Patin | *Pangasius hypophthalmus* | Putih keabu-abuan, kepala pipih |
+ 
+---
+ 
+## 🖥️ Frontend
+ 
+### Tech Stack
+ 
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS v4
+- **Animasi**: Motion (Framer Motion)
+- **Icons**: Lucide React
+- **Font**: Inter, Instrument Serif, Nokia Cellphone FC
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Struktur Folder
+ 
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+frontend/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx         # Root layout + metadata
+│   │   ├── page.tsx           # Landing page
+│   │   ├── globals.css        # Global styles + animasi
+│   │   └── classify/          # Halaman deteksi
+│   ├── features/
+│   │   └── landing/
+│   │       ├── components/    
+│   │       └── constants/     
+│   │   └── classify/
+│   │        └── components/ 
+│   └── shared/
+│       ├── components/        # Shared UI components
+│       └── lib/               # Utilities
+├── public/
+│   └── icon.svg               # Favicon
+├── package.json
+├── tailwind.config.ts
+└── next.config.ts
+```
+ 
+### Cara Menjalankan
+ 
+```bash
+# Install dependencies
+pnpm install
+ 
+# Jalankan development server
+pnpm dev
+```
+ 
+Buka [http://localhost:3000](http://localhost:3000) di browser.
