@@ -16,9 +16,14 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "AquaScan",
+  title: "fin.",
   description:
     "Unggah foto ikan air tawar dan kenali jenisnya secara instan dengan AI.",
+  icons: {
+    icon: "/icon.svg", 
+    shortcut: "/icon.svg",  
+    apple: "/icon.svg",       
+  },
 };
 
 export default function RootLayout({
