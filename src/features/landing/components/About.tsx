@@ -4,13 +4,13 @@ export function About() {
   return (
     <section
       id="tentang"
-      className="relative z-20 bg-[#F3F4ED] px-6 py-24 md:py-32"
+      className="relative z-20 bg-[#0871E7] px-6 py-24 md:py-32"
     >
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="font-instrument text-[32px] md:text-[44px] tracking-tight text-[#1a1a1a] mb-6">
+        <h2 className="font-instrument text-[32px] md:text-[44px] tracking-tight text-white mb-6">
           Tentang Fin.
         </h2>
-        <p className="font-sans text-[16px] text-[#1a1a1a]/70 leading-relaxed mb-12">
+        <p className="font-sans text-[16px] text-white/70 leading-relaxed mb-12">
           Fin. adalah sistem klasifikasi ikan air tawar berbasis
           kecerdasan buatan, dikembangkan sebagai tugas besar UAS mata kuliah
           Pengolahan Citra. Cukup unggah foto, dan sistem akan mengenali jenis
@@ -23,7 +23,7 @@ export function About() {
             return (
               <div
                 key={stat.label}
-                className="rounded-3xl border border-black/10 bg-white/60 backdrop-blur-sm p-6"
+                className="rounded-3xl border border-black/10 bg-[#F3F4ED] backdrop-blur-sm p-6"
               >
                 <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#0871E7]/10">
                   <Icon className="h-5 w-5 text-[#0871E7]" />

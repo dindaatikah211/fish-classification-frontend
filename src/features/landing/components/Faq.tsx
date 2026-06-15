@@ -5,8 +5,8 @@ import { ChevronDown } from "lucide-react";
 import { FAQ_ITEMS } from "../constants/Faq";
 
 export function Faq() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  
   return (
     <section id="faq" className="relative z-20 bg-white px-6 py-24 md:py-32">
       <div className="mx-auto max-w-2xl">
