@@ -11,12 +11,12 @@ export const FISH_SPECIES = [
     namaLatin: "Osphronemus goramy",
     ciri: "Badan lebar dan gepeng dengan sisik berukuran besar",
   },
-  {
-    id: "ikan_mas",
-    nama: "Ikan Mas",
-    namaLatin: "Cyprinus carpio",
-    ciri: "Sisik besar berwarna keemasan dan mulut sedikit monyong",
-  },
+  // {
+  //   id: "ikan_mas",
+  //   nama: "Ikan Mas",
+  //   namaLatin: "Cyprinus carpio",
+  //   ciri: "Sisik besar berwarna keemasan dan mulut sedikit monyong",
+  // },
   {
     id: "nila",
     nama: "Nila",

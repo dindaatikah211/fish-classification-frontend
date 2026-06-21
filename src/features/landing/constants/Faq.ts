@@ -17,7 +17,7 @@ export const FAQ_ITEMS = [
   {
     question: "Jenis ikan apa saja yang bisa dideteksi?",
     answer:
-      "Saat ini Fin. dapat mengenali 5 jenis ikan air tawar: Lele, Gurame, Ikan Mas, Nila, dan Patin.",
+      "Saat ini Fin. dapat mengenali 4 jenis ikan air tawar: Lele, Gurame, Nila, dan Patin.",
   },
   {
     question: "Apakah foto yang diunggah disimpan?",

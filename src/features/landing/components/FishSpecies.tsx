@@ -9,7 +9,7 @@ export function FishSpecies() {
     >
       <div className="mx-auto max-w-5xl text-center">
         <h2 className="font-instrument text-[32px] md:text-[44px] tracking-tight text-[#1a1a1a] mb-4">
-          5 Jenis Ikan yang Dikenali
+          4 Jenis Ikan yang Dikenali
         </h2>
         <p className="font-sans text-[16px] text-[#1a1a1a]/70 max-w-xl mx-auto mb-16">
           Model kami dilatih untuk mengenali jenis-jenis ikan air tawar berikut.
@@ -19,7 +19,7 @@ export function FishSpecies() {
           {FISH_SPECIES.map((fish) => (
             <div
               key={fish.id}
-              className="w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] rounded-3xl border border-black/10 bg-[#F3F4ED] p-6 text-left"
+              className="w-full sm:w-[calc(50%-12px)] rounded-3xl border border-black/10 bg-[#F3F4ED] p-6 text-left"
             >
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#0871E7]/10">
                 <Fish className="h-6 w-6 text-[#0871E7]" />
