@@ -1,5 +1,3 @@
-
-Readme · MD
 # 🐟 fin. — Klasifikasi Ikan Air Tawar dengan AI
  
 > Unggah foto ikan air tawarmu, dan biarkan AI mengenali jenisnya secara instan — lengkap dengan nama latin, habitat, dan ciri khasnya.
