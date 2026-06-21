@@ -1,4 +1,6 @@
-import { Fish } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { ChevronRight } from "lucide-react";
 import { FISH_SPECIES } from "../constants/FishSpecies";
 
 export function FishSpecies() {
@@ -17,23 +19,38 @@ export function FishSpecies() {
 
         <div className="flex flex-wrap justify-center gap-6">
           {FISH_SPECIES.map((fish) => (
-            <div
+            <Link
               key={fish.id}
-              className="w-full sm:w-[calc(50%-12px)] rounded-3xl border border-black/10 bg-[#F3F4ED] p-6 text-left"
+              href={`/jenis-ikan/${fish.id}`}
+              className="group w-full sm:w-[calc(50%-12px)] overflow-hidden rounded-3xl border border-black/10 bg-[#F3F4ED] text-left transition-shadow hover:shadow-lg"
             >
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#0871E7]/10">
-                <Fish className="h-6 w-6 text-[#0871E7]" />
+              <div className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src={fish.image}
+                  alt={fish.nama}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
-              <h3 className="font-sans text-[18px] font-semibold text-[#1a1a1a] mb-1">
-                {fish.nama}
-              </h3>
-              <p className="font-sans text-[13px] italic text-[#1a1a1a]/50 mb-3">
-                {fish.namaLatin}
-              </p>
-              <p className="font-sans text-[14px] text-[#1a1a1a]/70 leading-relaxed">
-                {fish.ciri}
-              </p>
-            </div>
+
+              <div className="p-6">
+                <div className="mb-1 flex items-center justify-between gap-2">
+                  <h3 className="font-sans text-[18px] font-semibold text-[#0871E7]">
+                    {fish.nama}
+                  </h3>
+                  <span className="inline-flex flex-shrink-0 items-center gap-1.5 font-sans text-[13px] font-medium text-gray-500">
+                    Lihat Detail
+                    <ChevronRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                  </span>
+                </div>
+                <p className="font-sans text-[13px] italic text-[#1a1a1a]/50 mb-3">
+                  {fish.namaLatin}
+                </p>
+                <p className="font-sans text-[14px] text-[#1a1a1a]/70 leading-relaxed">
+                  {fish.ciri}
+                </p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
