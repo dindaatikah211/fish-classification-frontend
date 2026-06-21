@@ -19,9 +19,8 @@
 |----|-------|-----------|-----------|
 | 1 | Lele | *Clarias batrachus* | Tidak bersisik, ada kumis/sungut |
 | 2 | Gurame | *Osphronemus goramy* | Badan lebar gepeng, sisik besar |
-| 3 | Ikan Mas | *Cyprinus carpio* | Sisik besar keemasan, mulut monyong |
-| 4 | Nila | *Oreochromis niloticus* | Garis vertikal di tubuh & ekor |
-| 5 | Patin | *Pangasius hypophthalmus* | Putih keabu-abuan, kepala pipih |
+| 3 | Nila | *Oreochromis niloticus* | Garis vertikal di tubuh & ekor |
+| 4 | Patin | *Pangasius hypophthalmus* | Putih keabu-abuan, kepala pipih |
  
 ---
  
