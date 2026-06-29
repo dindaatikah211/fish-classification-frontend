@@ -3,8 +3,8 @@ import { Fish, Brain, Sparkles } from "lucide-react";
 export const STATS = [
   {
     icon: Fish,
-    label: "5 Jenis Ikan",
-    description: "Lele, gurame, ikan mas, nila, dan patin",
+    label: "4 Jenis Ikan",
+    description: "Lele, gurame, nila, dan patin",
   },
   {
     icon: Brain,
